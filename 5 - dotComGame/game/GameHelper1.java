@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GameHelper {
+public class GameHelper1 {
 
   private static final String alphabet = "abcdefg";
   private int gridLength = 7;

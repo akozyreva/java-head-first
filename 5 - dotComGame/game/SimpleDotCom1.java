@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class SimpleDotCom {
+public class SimpleDotCom1 {
     private int[] locationCells;
     private int[] rightGuessCell;
     int numOfHits = 0;
