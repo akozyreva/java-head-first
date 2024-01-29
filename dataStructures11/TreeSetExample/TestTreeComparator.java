@@ -4,6 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 // example with using comparator for Book objs
+
 public class TestTreeComparator {
     public static void main(String[] args) {
         new TestTreeComparator().go();
