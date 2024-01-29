@@ -17,6 +17,11 @@ public class Jukebox4 {
         ArtistCompare artistCompare = new ArtistCompare();
         songList.sort(artistCompare); // and we pass Comparator here
         System.out.println(songList);
+
+        // or we can simply sort, using lambda
+        songList.sort( (one, two) -> one.getTitle().compareTo(two.getTitle()));
+        System.out.println(songList);
+
     }
 }
 
