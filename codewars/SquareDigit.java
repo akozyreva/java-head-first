@@ -2,6 +2,7 @@ package codewars;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /* you are asked to square every digit of a number and concatenate them.
 
@@ -17,8 +18,7 @@ public class SquareDigit {
     }
 
     public static int squareDigits(int n) {
-        String numbers = List.of(String.valueOf(n).split(""))
-                .stream().map(num -> (int) Math.pow(Double.parseDouble(num), 2)).
+        String numbers = Stream.of(String.valueOf(n).split("")).map(num -> (int) Math.pow(Double.parseDouble(num), 2)).
                 map(String::valueOf).collect(Collectors.joining());
         System.out.println(numbers);
         return 0;
